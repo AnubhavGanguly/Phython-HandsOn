@@ -4,10 +4,10 @@ from sqlalchemy.orm import sessionmaker, DeclarativeBase
 
 from .config import settings
 
-print("DB_USER:", settings.DB_USER)
-print("DB_HOST:", settings.DB_HOST)
-print("DB_PORT:", settings.DB_PORT)
-print("DB_NAME:", settings.DB_NAME)
+# print("DB_USER:", settings.DB_USER)
+# print("DB_HOST:", settings.DB_HOST)
+# print("DB_PORT:", settings.DB_PORT)
+# print("DB_NAME:", settings.DB_NAME)
 
 
 DATABASE_URL = URL.create(
@@ -19,7 +19,7 @@ DATABASE_URL = URL.create(
     database=settings.DB_NAME,
 )
 
-print("DATABASE_URL:", DATABASE_URL)
+#print("DATABASE_URL:", DATABASE_URL)
 
 engine = create_engine(
     DATABASE_URL,
